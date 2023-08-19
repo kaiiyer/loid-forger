@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+.dashboard-container {
+  padding: 20px;
+  margin: auto;
+  max-width: 1000px;
+}
+
+
+.connected-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.connected-container > * {
+  width: 48%; /* Makes each child (Search and Upload components) take up roughly half the width of the container */
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+}
+
+.validator-link {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+  .validator-link a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center; /* Center the text horizontally */
+    width: 100%; /* Ensure the title takes the full width of its container */
+  }

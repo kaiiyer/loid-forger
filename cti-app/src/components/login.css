@@ -1,0 +1,29 @@
+/* src/components/Login.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* make it full screen height */
+    }
+  
+  .logo {
+    width: 200px; /* or whatever size you want */
+    margin-bottom: 20px;
+  }
+  
+  .login-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    background-color: #6383a8;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #5a75a0;
+  }
+  

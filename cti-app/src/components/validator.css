@@ -1,0 +1,94 @@
+/* src/components/Validator.css */
+
+/* General Page Styling */
+body {
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+    background-color: #1e1e1e;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1faae2;
+    padding-bottom: 10px;
+  }
+  
+  .validator-content {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(31, 170, 226, 0.2);
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* List of Records */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 8px;
+    background-color: #1e1e1e;
+    border-left: 4px solid #1faae2;
+    margin-top: 5px;
+    color: white;
+  }
+  
+  /* Form Styles */
+  .form-container {
+    margin-top: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  select,
+  input[type="number"] {
+    padding: 12px;
+    border: 2px solid #1faae2;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #1faae2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #1591b2;
+  }
+  
+  /* Link to Home Page */
+  .validator-link {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .validator-link a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .validator-link a:hover {
+    text-decoration: underline;
+  }
+  

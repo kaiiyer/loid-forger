@@ -1,7 +1,7 @@
 // src/components/Search.js
 import React from 'react';
 import axios from 'axios';
-
+import './search.css';
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -48,14 +48,14 @@ class Search extends React.Component {
     console.log('Rendering with results:', this.state.results);
 
     return (
-      <div>
+      <div className="search-form">
         <input
           type="text"
           placeholder="Search for IOC"
           onChange={this.handleInputChange}
         />
         <button onClick={this.handleSearch}>Search</button>
-        <ul>
+        <ul className="search-results">
           {this.state.results.map((result, index) => (
             <li key={index}>{result}</li>
           ))}

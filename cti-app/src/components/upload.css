@@ -1,0 +1,21 @@
+/* src/components/upload.css */
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .upload-form input,
+  .upload-form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .upload-form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  
