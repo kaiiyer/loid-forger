@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import Login from './components/login';
+import Upload from './components/upload';
+import Search from './components/search';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    account: null
+  };
+
+  handleLogin = (account) => {
+    this.setState({ account });
+  };
+
+  render() {
+    return (
+      <div>
+        {this.state.account ? (
+          <>
+            <h1>Welcome, {this.state.account}</h1>
+            <Upload />
+            <Search />
+          </>
+        ) : (
+          <Login onLogin={this.handleLogin} />
+        )}
+      </div>
+    );
+  }
 }
 
 export default App;
