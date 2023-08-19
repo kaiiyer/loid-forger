@@ -1,6 +1,7 @@
 // src/components/Login.js
 import React from 'react';
 import Web3 from 'web3';
+import './login.css';
 
 class Login extends React.Component {
   connectMetamask = async () => {
@@ -18,13 +19,18 @@ class Login extends React.Component {
     }
   };
 
-  render() {
-    return (
-      <button onClick={this.connectMetamask}>
+render() {
+  return (
+    <div className="login-container">
+      <img src="/logo512.png" alt="Logo" className="logo" />
+      <button onClick={this.connectMetamask} className="login-button">
         Login with Metamask
       </button>
-    );
-  }
+    </div>
+  );
+}
 }
 
 export default Login;
+
+

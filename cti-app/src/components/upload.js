@@ -1,12 +1,13 @@
 // src/components/Upload.js
 import React from 'react';
 import axios from 'axios';
-
+import './upload.css';
 class Upload extends React.Component {
   state = {
     file: null,
     ip: '',
-    hash: ''
+    hash: '',
+    domain: ''
   };
 
   handleFileChange = (event) => {
@@ -37,11 +38,11 @@ class Upload extends React.Component {
 
   render() {
     return (
-      <div>
-        <input type="file" accept="application/pdf" onChange={this.handleFileChange} />
+      <div className="upload-form">
         <input type="text" name="ip" placeholder="IP" onChange={this.handleInputChange} />
         <input type="text" name="domain" placeholder="Domain" onChange={this.handleInputChange} />
         <input type="text" name="hash" placeholder="Hash" onChange={this.handleInputChange} />
+        <input type="file" accept="application/pdf" onChange={this.handleFileChange} />
         <button onClick={this.handleSubmit}>Upload</button>
       </div>
     );

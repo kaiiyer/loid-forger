@@ -1,0 +1,33 @@
+/* src/components/Search.css */
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .search-form input,
+  .search-form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .search-results {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .search-results li {
+    padding: 8px;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
