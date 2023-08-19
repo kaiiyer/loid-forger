@@ -51,7 +51,7 @@ class Search extends React.Component {
       <div>
         <input
           type="text"
-          placeholder="Search by IP or Hash"
+          placeholder="Search for IOC"
           onChange={this.handleInputChange}
         />
         <button onClick={this.handleSearch}>Search</button>

@@ -20,9 +20,11 @@ class Upload extends React.Component {
 
   handleSubmit = async () => {
     const formData = new FormData();
-    formData.append('file', this.state.file);
-    formData.append('ip', this.state.ip);
+    formData.append('Proof of concept Document', this.state.file);
+    formData.append('IP', this.state.ip);
+    formData.append('Domain', this.state.domain);
     formData.append('hash', this.state.hash);
+
     
     try {
       // Replace with your server API endpoint
@@ -38,6 +40,7 @@ class Upload extends React.Component {
       <div>
         <input type="file" accept="application/pdf" onChange={this.handleFileChange} />
         <input type="text" name="ip" placeholder="IP" onChange={this.handleInputChange} />
+        <input type="text" name="domain" placeholder="Domain" onChange={this.handleInputChange} />
         <input type="text" name="hash" placeholder="Hash" onChange={this.handleInputChange} />
         <button onClick={this.handleSubmit}>Upload</button>
       </div>
