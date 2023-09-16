@@ -59,3 +59,7 @@ Standardisation Measures how much of free text is used in the feed’s objects
  - Use a voting procedure among validators to finalize the status of each IOC.
 
 If IOC is satisfying the quality then write to block.
+
+
+Inspired by the amazing research paper by Dimitrios Chatziamanetoglou and Konstantinos Rantos: [Blockchain-Based Cyber Threat Intelligence Sharing Using
+Proof-of-Quality Consensus](https://downloads.hindawi.com/journals/scn/2023/3303122.pdf)
