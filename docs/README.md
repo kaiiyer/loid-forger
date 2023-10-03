@@ -8,14 +8,11 @@ Login to App using your crypto wallet which would be used for rewards
 
 App Roles:
 
-        Submitter
-        Submitter can submit IOC with the POC(Proof of Concept)
+        *Submitter* - Submit IOC with the POC(Proof of Concept)
 
-        Validator
-        Validator will evaluate the IOC and assign a score. If the mean score given to IOC by all validators in the pool is greater than acceptable quality score then IOC will be written to block else discarded.
+        *Validator* - Evaluate the IOC and assign a score. If the mean score given to IOC by all validators in the pool is greater than acceptable quality score then IOC will be written to block else discarded.
 
-        Consumer
-        Consumer can search can search for IOCs using the search panel. IOC(IP/Domain/Hash) would have the following info:
+        *Consumer* - Search for IOCs using the search panel. IOC(IP/Domain/Hash) would have the following info:
             First seen date
             Score
             Tags
